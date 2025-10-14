@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/66349fc88a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Módulo 1 Evaluación Sofia Minaya</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -12,10 +16,95 @@
     <link rel="icon" href="/images/favicon.png" />
   </head>
 
-  <body>
+  <body class="body">
+    <!-- HEADER -->
     <header class="header">
-      <h1 class="title">1.N Título</h1>
+      <nav class="header__nav">
+        <a href="https://adalab.es/" target="_blank" class="header__menu-icon"
+          ><img src="./images/ico-menu.svg" alt="Menú"
+        /></a>
+      </nav>
     </header>
-    <main class="main"></main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay">
+        <h1 class="hero__title">COMIENZOS COMPARTIDOS</h1>
+        <p class="hero__subtitle">
+          Todo lo que necesitan para volver al cole con ilusión
+        </p>
+      </div>
+      <a class="hero__arrow" href="#back-to-school"
+        ><img src="./images/ico-scroll-down.svg" alt="Bajar"
+      /></a>
+    </section>
+    <main>
+      <!-- TIENDA DE DEPORTE -->
+      <section class="shop">
+        <div class="shop__content">
+          <h3 class="shop__subtitle">HISTORIAS, MODA Y ROPA COMPARTIDA</h3>
+          <h2 class="shop__title">TU TIENDA DE DEPORTE</h2>
+          <p>
+            El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa
+            deportiva para hombre y mujer te ofrece las últimas tecnologías, a
+            la altura de tu rendimiento, para que superes tu mejor marca
+            personal.
+          </p>
+          <a href="https://adalab.es/" target="_blank" class="shop__button"
+            >Comprar</a
+          >
+        </div>
+      </section>
+      <!-- VUELTA AL COLE -->
+      <section class="back-to-school" id="back-to-school">
+        <div class="back-to-school__content">
+          <p class="back-to-school__subtitle">
+            ¡Prepáralos con tus marcas favoritas!
+          </p>
+          <h2 class="back-to-school__title">VUELTA AL COLE</h2>
+          <div class="back-to-school__grid">
+            <!-- Item 1 -->
+            <div class="product">
+              <p class="product__name">Mochilas escolares</p>
+            </div>
+            <!-- Item 2 -->
+            <div class="product">
+              <p class="product__name">Estuches</p>
+            </div>
+            <!-- Item 3 -->
+            <div class="product">
+              <p class="product__name">Bolsas de deporte</p>
+            </div>
+          </div>
+          <a href="https://adalab.es/" target="_blank" class="product__button"
+            >Empezar ahora</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a class="footer__arrow" href="#hero"
+        ><img src="./images/ico-arrow.svg" alt="Volver arriba"
+      /></a>
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li><a href="https://adalab.es/" target="_blank">ZAPATILLAS</a></li>
+          <li><a href="https://adalab.es/" target="_blank">ROPA</a></li>
+          <li><a href="https://adalab.es/" target="_blank">NIÑO</a></li>
+          <li><a href="https://adalab.es/" target="_blank">DESTACADOS</a></li>
+          <li><a href="https://adalab.es/" target="_blank">TIPS</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li><a href="https://adalab.es/" target="_blank">TWITTER</a></li>
+          <li><a href="https://adalab.es/" target="_blank">INSTAGRAM</a></li>
+          <li><a href="https://adalab.es/" target="_blank">YOUTUBE</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__copy">
+        <p>&copy; 2023</p>
+        <p>we <i class="fa-solid fa-heart"></i> run</p>
+      </div>
+    </footer>
   </body>
 </html>
