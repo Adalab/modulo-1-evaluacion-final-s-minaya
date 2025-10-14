@@ -29,7 +29,6 @@ El proyecto se estructura en varios módulos o secciones según el diseño:
 
 - El icono de la hamburguesa debe estar fijo en la parte superior izquierda de la pantalla y no debe desaparecer al hacer scroll. Debe ser un enlace a la página de [Adalab](https://adalab.es/) Este menú servirá para mostrar una lista de enlaces pero en esta evaluación no despliega ningún submenú.
 - No desaparece al hacer scroll.
-- El icono enlaza a la página de [Adalab](https://adalab.es).
 - No se requiere desplegar ningún submenú.
 
 ### Hero “Comienzos compartidos”
@@ -66,40 +65,42 @@ El proyecto se estructura en varios módulos o secciones según el diseño:
   - En el `:hover` de los botones (“Comprar” y “Empezar ahora”) incluir una **transformación** ( por ejemplo con `transition`.)
   - **A investigar:** Añadir una **animación en el botón del footer** para investigar las propiedades `animation`.
 
-
 ### Entrega
 
 - La fecha límite de entrega es el Miércoles, 15 de octubre a las 23:59h.
-- Solo debemos hacer commits y merges en la rama **main** de nuestro repositorio hasta la fecha límite. Si después de la evaluación queremos seguir trabajando en el ejercicio, lo podemos hacer en otra rama 
-y no debemos mergearla hasta que el profesor lo indique.
+- Solo debemos hacer commits y merges en la rama **main** de nuestro repositorio hasta la fecha límite. Si después de la evaluación queremos seguir trabajando en el ejercicio, lo podemos hacer en otra rama
+  y no debemos mergearla hasta que el profesor lo indique.
 
-
-# Normas y criterios de evaluación #
+# Normas y criterios de evaluación
 
 - Ejercicio individual, aunque se puede pedir ayuda. Si se detecta que el código no es personal, se pasará directamente a la re-evaluación del módulo.
-- Si no se supera al menos el 80% de los siguientes criterios o no se supera algún criterio clave (marcados con *) se me pedirá que realice una re-evaluación.
+- Si no se supera al menos el 80% de los siguientes criterios o no se supera algún criterio clave (marcados con \*) se me pedirá que realice una re-evaluación.
 
-## General ##
-Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los distintos ficheros*.
+## General
 
-## HTML - Las secciones con asteriscos son imprescindibles ##
-* Tener el código perfectamente indentado*.
-* Crear código HTML con sintaxis correcta, bien estructurado*.
-* Usar etiquetas HTML semánticas adecuadas para cada pieza de contenido*.
+Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los distintos ficheros\*.
 
-## CSS / Sass - Las secciones con asteríscos son imprescindibles ##
-* Tener el código perfectamente indentado*.
-* Crear código Sass con sintaxis correcta, bien estructurado*.
-* Usar algunas características de Sass como variables, anidación y parciales.
-* Usar código CSS que usa de forma intensiva selectores de clase. **No usar selectores de etiqueta ni de
-id***.
-* Usar selectores de clase en inglés*.
-* Usar el modelo de caja de CSS de forma adecuada para espacicar tamaño, relleno y márgenes*.
-* Usar estilos de texto y fondo para distintos tipos de elementos.
-* Usar flexbox de forma adecuada para organizar elemento en cajas fexibles*.
-* Usar media queries para que los diseños se ajusten a distintos tamaños de dispositivo*.
-* Usar posicionamiento para emplazar elementos fijos y absolutos en la pantalla.
-* Usar CSS grid para emplazar elementos usando una rejilla.
-* Usar transiciones CSS para dotar de dinamismo a un proyecto web.
+## HTML - Las secciones con asteriscos son imprescindibles
 
+- Tener el código perfectamente indentado\*.
+- Crear código HTML con sintaxis correcta, bien estructurado\*.
+- Usar etiquetas HTML semánticas adecuadas para cada pieza de contenido\*.
 
+## CSS / Sass - Las secciones con asteríscos son imprescindibles
+
+- Tener el código perfectamente indentado\*.
+- Crear código Sass con sintaxis correcta, bien estructurado\*.
+- Usar algunas características de Sass como variables, anidación y parciales.
+- Usar código CSS que usa de forma intensiva selectores de clase. **No usar selectores de etiqueta ni de
+  id\***.
+- Usar selectores de clase en inglés\*.
+- Usar el modelo de caja de CSS de forma adecuada para espacicar tamaño, relleno y márgenes\*.
+- Usar estilos de texto y fondo para distintos tipos de elementos.
+- Usar flexbox de forma adecuada para organizar elemento en cajas fexibles\*.
+- Usar media queries para que los diseños se ajusten a distintos tamaños de dispositivo\*.
+  -Los puntos de breakpoint para el diseño de la evaluación son:
+  -A partir de 768px versión de tablet
+  -A partir de 1024px será la versión para desktop
+- Usar posicionamiento para emplazar elementos fijos y absolutos en la pantalla.
+- Usar CSS grid para emplazar elementos usando una rejilla.
+- Usar transiciones CSS para dotar de dinamismo a un proyecto web.

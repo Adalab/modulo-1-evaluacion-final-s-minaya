@@ -8,15 +8,29 @@
       crossorigin="anonymous"
     ></script>
     <title>Módulo 1 Evaluación Sofia Minaya</title>
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="icon" href="/images/favicon.png" />
   </head>
 
-  <body class="body">
+  <body>
     <!-- HEADER -->
     <header class="header">
       <nav class="header__nav">
@@ -29,7 +43,7 @@
     <section class="hero" id="hero">
       <div class="hero__overlay">
         <h1 class="hero__title">COMIENZOS COMPARTIDOS</h1>
-        <p class="hero__subtitle">
+        <p class="hero__text">
           Todo lo que necesitan para volver al cole con ilusión
         </p>
       </div>
@@ -37,45 +51,44 @@
         ><img src="./images/ico-scroll-down.svg" alt="Bajar"
       /></a>
     </section>
+    <!-- MAIN -->
     <main>
       <!-- TIENDA DE DEPORTE -->
       <section class="shop">
-        <div class="shop__content">
-          <h3 class="shop__subtitle">HISTORIAS, MODA Y ROPA COMPARTIDA</h3>
-          <h2 class="shop__title">TU TIENDA DE DEPORTE</h2>
-          <p>
-            El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa
-            deportiva para hombre y mujer te ofrece las últimas tecnologías, a
-            la altura de tu rendimiento, para que superes tu mejor marca
-            personal.
-          </p>
-          <a href="https://adalab.es/" target="_blank" class="shop__button"
-            >Comprar</a
-          >
-        </div>
+        <h3 class="shop__subtitle">HISTORIAS, MODA Y ROPA DEPORTIVA</h3>
+        <h2 class="shop__title">TU TIENDA DE DEPORTE</h2>
+        <p class="shop__text">
+          El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa
+          deportiva para hombre y mujer te ofrece las últimas tecnologías, a la
+          altura de tu rendimiento, para que superes tu mejor marca personal.
+        </p>
+        <a href="https://adalab.es/" target="_blank" class="shop__button"
+          >Comprar</a
+        >
       </section>
       <!-- VUELTA AL COLE -->
       <section class="back-to-school" id="back-to-school">
-        <div class="back-to-school__content">
-          <p class="back-to-school__subtitle">
-            ¡Prepáralos con tus marcas favoritas!
-          </p>
-          <h2 class="back-to-school__title">VUELTA AL COLE</h2>
-          <div class="back-to-school__grid">
-            <!-- Item 1 -->
-            <div class="product">
-              <p class="product__name">Mochilas escolares</p>
-            </div>
-            <!-- Item 2 -->
-            <div class="product">
-              <p class="product__name">Estuches</p>
-            </div>
-            <!-- Item 3 -->
-            <div class="product">
-              <p class="product__name">Bolsas de deporte</p>
-            </div>
-          </div>
-          <a href="https://adalab.es/" target="_blank" class="product__button"
+        <p class="back-to-school__subtitle">
+          ¡Prepáralos con tus marcas favoritas!
+        </p>
+        <h2 class="back-to-school__title">VUELTA AL COLE</h2>
+        <div class="back-to-school__grid">
+          <!-- Item 1 -->
+          <div class="back-to-school_backpack-img"></div>
+          <p class="back-to-school_backpack-text">Mochilas escolares</p>
+
+          <!-- Item 2 -->
+          <div class="back-to-school_case-img"></div>
+          <p class="back-to-school_case-text">Estuches</p>
+
+          <!-- Item 3 -->
+          <div class="back-to-school_bag-img"></div>
+          <p class="back-to-school_bag-text">Bolsas de deporte</p>
+
+          <a
+            href="https://adalab.es/"
+            target="_blank"
+            class="back-to-school__button"
             >Empezar ahora</a
           >
         </div>
@@ -84,7 +97,10 @@
     <!-- FOOTER -->
     <footer class="footer">
       <a class="footer__arrow" href="#hero"
-        ><img src="./images/ico-arrow.svg" alt="Volver arriba"
+        ><img
+          class="arrow-img"
+          src="./images/ico-arrow.svg"
+          alt="Volver arriba"
       /></a>
       <nav class="footer__nav">
         <ul class="footer__links">
@@ -102,8 +118,11 @@
       </nav>
 
       <div class="footer__copy">
-        <p>&copy; 2023</p>
-        <p>we <i class="fa-solid fa-heart"></i> run</p>
+        <p class="copy">&copy; 2023</p>
+        <p class="we-love-run">
+          we
+          <span class="green-heart"><i class="fa-solid fa-heart"></i></span> run
+        </p>
       </div>
     </footer>
   </body>
