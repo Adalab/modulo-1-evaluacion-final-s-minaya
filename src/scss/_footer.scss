@@ -1,4 +1,5 @@
 @use './variables' as v;
+
 .footer {
   background-color: v.$color_dark;
   display: flex;
@@ -67,6 +68,46 @@
       color: v.$color_primary;
       display: inline-flex;
       align-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 7rem 7rem 3rem 7rem;
+
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: left;
+
+      ul {
+        text-align: left;
+      }
+    }
+
+    &__links {
+      margin-left: 10rem;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10rem;
+      text-align: left;
+    }
+
+    &__copy {
+      text-align: left;
     }
   }
 }

@@ -1,9 +1,10 @@
 @use './variables' as v;
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: v.$color_primary; 
+  background-color: v.$color_primary;
   color: v.$color-white;
   height: 4rem;
   width: 4rem;

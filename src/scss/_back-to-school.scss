@@ -1,4 +1,5 @@
 @use './variables' as v;
+
 .back-to-school {
   font-family: v.$font_alt;
   font-weight: bold;
@@ -19,8 +20,8 @@
 
   &__grid {
     display: grid;
+    grid-template-areas: "back-to-school__item-1" "back-to-school__item-2" "back-to-school__item-3";
     grid-template-columns: 1fr;
-    grid-template-rows: 7fr;
     justify-items: center;
     gap: 2rem;
   }
@@ -40,37 +41,31 @@
 
   &__backpack-img {
     background-image: url("../images/lpbts-mod05-img01-desk.png");
-    grid-row: 1;
   }
 
   &__backpack-text {
     font-size: 1.5rem;
     width: 15rem;
-    grid-row: 2;
 
   }
 
   &__case-img {
     background-image: url("../images/lpbts-mod05-img04-mob.png");
-    grid-row: 3;
 
   }
 
   &__case-text {
     font-size: 1.5rem;
     width: 15rem;
-    grid-row: 4;
   }
 
   &__bag-img {
     background-image: url("../images/lpbts-mod05-img03-mob.png");
-    grid-row: 5;
   }
 
   &__bag-text {
     font-size: 1.5rem;
     width: 15rem;
-    grid-row: 6;
 
   }
 
@@ -84,6 +79,7 @@
     background-color: v.$color_primary;
     border: 0.3rem solid v.$color_primary;
     border-radius: v.$border_radius_pill;
+    align-items: baseline;
     transition: background-color v.$transition_fast;
 
     &:hover {
@@ -103,5 +99,65 @@
 
   50% {
     transform: translateY(-8px);
+  }
+}
+
+@media (min-width: 768px) {
+  .back-to-school {
+    &__grid {
+      display: grid;
+      grid-template-areas:
+        "back-to-school__item-1"
+        "back-to-school__item-2"
+        "back-to-school__item-3";
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__item-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: start;
+      column-gap: 10rem;
+      row-gap: 0.5rem;
+    }
+
+    &__backpack-img {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__backpack-text {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &__case-img {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &__case-text {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &__bag-img {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    &__bag-text {
+      grid-column: 3;
+      grid-row: 2;
+    }
   }
 }
