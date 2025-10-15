@@ -6,6 +6,7 @@
   background-color: v.$color_light;
   padding: 3rem 2rem 4rem;
   text-align: center;
+ 
 
   &__subtitle {
     color: #626262;
@@ -43,9 +44,9 @@
     background-image: url("../images/lpbts-mod05-img01-desk.png");
   }
 
-  &__backpack-text {
+  &__backpack-text, &__case-text, &__bag-text {
     font-size: 1.5rem;
-    width: 15rem;
+    padding-bottom: 3rem;
 
   }
 
@@ -54,20 +55,12 @@
 
   }
 
-  &__case-text {
-    font-size: 1.5rem;
-    width: 15rem;
-  }
 
   &__bag-img {
     background-image: url("../images/lpbts-mod05-img03-mob.png");
   }
 
-  &__bag-text {
-    font-size: 1.5rem;
-    width: 15rem;
-
-  }
+  
 
   &__button {
     text-decoration: none;
@@ -159,6 +152,13 @@
       grid-column: 3;
       grid-row: 2;
     }
+       &__backpack-img,
+    &__case-img,
+    &__bag-img {
+      width: 11rem;
+      height: 11rem;
+      
+    }
   }
 }
 
@@ -181,7 +181,6 @@
     &__case-text,
     &__bag-text {
       font-size: 1.4rem;
-      width: 12rem;
     }
      &__button {
     font-size: 1.6rem; 
