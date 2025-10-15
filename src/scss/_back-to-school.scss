@@ -161,3 +161,31 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+
+  .back-to-school {
+    &__item-2 {
+      column-gap: 20rem;
+    }
+
+    &__backpack-img,
+    &__case-img,
+    &__bag-img {
+      width: 12rem;
+      height: 12rem;
+      
+    }
+
+    &__backpack-text,
+    &__case-text,
+    &__bag-text {
+      font-size: 1.4rem;
+      width: 12rem;
+    }
+     &__button {
+    font-size: 1.6rem; 
+    padding: 0.8rem 3rem; 
+  }
+}
+}

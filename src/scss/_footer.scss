@@ -111,3 +111,26 @@
     }
   }
 }
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 5rem 5rem 0 3rem;
+      &__nav {
+        a {
+          font-size: 1.3rem;
+        }
+      }
+      &__links {
+        margin-left: none;
+        margin-right: 10rem;
+      }
+
+      &__copy {
+        font-size: 1.2rem;
+      }
+
+      &__arrow {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+  }

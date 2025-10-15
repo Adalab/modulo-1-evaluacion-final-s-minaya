@@ -64,3 +64,24 @@
   }
 
 }
+
+@media (min-width: 1024px) {
+  .shop {
+    padding-left: 15rem;
+    padding-right: 20rem;
+    margin-top: 2rem;
+
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
+    }
+
+    &__text {
+      font-size: 2rem;
+    }
+  }
+}

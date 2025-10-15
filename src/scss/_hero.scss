@@ -86,3 +86,22 @@
 
 
 }
+@media (min-width: 1024px) {
+  .hero {
+    transform: none;
+    padding-inline: 20rem;
+    padding-bottom: 3rem;
+
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__text {
+      margin-inline: 0;
+      padding-inline: 0;
+      font-size: 2rem;
+      margin-bottom: 0;
+      padding-bottom: 3rem;
+    }
+  }
+}
