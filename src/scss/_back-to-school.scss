@@ -1,0 +1,107 @@
+@use './variables' as v;
+.back-to-school {
+  font-family: v.$font_alt;
+  font-weight: bold;
+  background-color: v.$color_light;
+  padding: 3rem 2rem 4rem;
+  text-align: center;
+
+  &__subtitle {
+    color: #626262;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  &__backpack-img,
+  &__case-img,
+  &__bag-img {
+    height: 15rem;
+    width: 15rem;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+  }
+
+  &__backpack-img {
+    background-image: url("../images/lpbts-mod05-img01-desk.png");
+    grid-row: 1;
+  }
+
+  &__backpack-text {
+    font-size: 1.5rem;
+    width: 15rem;
+    grid-row: 2;
+
+  }
+
+  &__case-img {
+    background-image: url("../images/lpbts-mod05-img04-mob.png");
+    grid-row: 3;
+
+  }
+
+  &__case-text {
+    font-size: 1.5rem;
+    width: 15rem;
+    grid-row: 4;
+  }
+
+  &__bag-img {
+    background-image: url("../images/lpbts-mod05-img03-mob.png");
+    grid-row: 5;
+  }
+
+  &__bag-text {
+    font-size: 1.5rem;
+    width: 15rem;
+    grid-row: 6;
+
+  }
+
+  &__button {
+    text-decoration: none;
+    color: v.$color_white;
+    font-family: v.$font_main;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    background-color: v.$color_primary;
+    border: 0.3rem solid v.$color_primary;
+    border-radius: v.$border_radius_pill;
+    transition: background-color v.$transition_fast;
+
+    &:hover {
+      background-color: v.$color_white;
+      color: v.$color_primary;
+    }
+  }
+
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}

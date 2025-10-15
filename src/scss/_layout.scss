@@ -1,0 +1,8 @@
+@use './variables' as v;
+:root {
+  font-family: v.$font_main
+}
+
+html {
+  font-size: 62.5%;
+}

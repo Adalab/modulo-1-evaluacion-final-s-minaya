@@ -1,0 +1,20 @@
+@use './variables' as v;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: v.$color_primary; 
+  color: v.$color-white;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  &__nav {
+    img {
+      height: 62%;
+    }
+  }
+}
